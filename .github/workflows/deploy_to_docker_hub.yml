@@ -20,7 +20,7 @@ jobs:
       uses: docker/build-push-action@v1
       with:
         path: Web
-        username: ${{ secrets.DOCKER_USERNAME }}
+        username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: melmasry/interest
         tags: v1 
