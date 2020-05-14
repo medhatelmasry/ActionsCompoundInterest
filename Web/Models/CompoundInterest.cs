@@ -79,7 +79,7 @@ namespace Web.Models
         /// </summary>
         public double CompoundInterestCalculator()
         {
-            var interestRate = InterestRate / 1000;
+            var interestRate = InterestRate / 100;
 
             // (1 + r/n)
             double body = 1 + (interestRate / TimesCompounded);
